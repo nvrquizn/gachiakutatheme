@@ -1,0 +1,659 @@
+/* ========================================================= */
+/* 💅 Sak (#327675) & Nvrquizn - Gachiakuta: Jabber Theme     */
+/* 🧪 Gritty dark-medium theme with toxic purple accents     */
+/* ========================================================= */
+
+/*
+- Do NOT resell or heavily edit.
+- Thank you so much for choosing my CSS, I hope you enjoy!
+*/
+
+/* Readability Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Quicksand:wght@500;700&display=swap');
+
+:root {
+  /* ========================================================= */
+  /* 💜 TOXIC JABBER PALETTE                                   */
+  /* ========================================================= */
+  --kolur1: #241931;      /* deep midnight violet */
+  --kolur170: #241931b3;
+
+  --kolur2: #3a2751;      /* dark bruise purple */
+  --kolur270: #3a2751b3;
+
+  --kolur3: #0d0a12;      /* near-black void charcoal */
+  --kolur370: #0d0a12cc;
+
+  --kolur350: #15101cd9;  /* dark violet glass obsidian */
+
+  --kolur4: #120b1a;      /* deep shadow purple */
+  --kolur470: #120b1ac9;
+
+  --kolur5: #e3def2;      /* pale lavender highlight */
+  --kolur6: #050308;      /* absolute abyss black */
+  --kolur7: #7a52aa;      /* subtle toxic purple glow accent */
+
+  --kolur760: #24193145;
+  --kolur780: #3a275145;
+
+  --darkgray: #050307;    /* void shadow */
+  --lightwhite: #ded9e8d0;
+  --white: #ffffff;
+}
+
+/* ============================= */
+/* 🧪 BACKGROUND */
+/* ============================= */
+@media screen and (max-width: 800px){
+  body {
+    background: url('https://i.ibb.co/Q3v98rDh/Screenshot-2026-05-17-at-23-03-18.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Outfit', sans-serif;
+    color: var(--kolur5) !important;
+  }
+
+  html:not(.nolayout) body:after {
+    content:"";
+    position:fixed;
+    top:0;
+    height:160vh;
+    left:0;
+    right:0;
+    z-index:-1;
+    background: linear-gradient(rgba(13, 10, 18, 0.65), rgba(5, 3, 8, 0.80)), url('https://i.ibb.co/Q3v98rDh/Screenshot-2026-05-17-at-23-03-18.png') center center;
+    background-size: cover;
+    font-family: 'Outfit', sans-serif;
+    color: var(--kolur5) !important;
+  }
+	
+  .boxtopper {
+    padding: none;
+    float: left;
+    margin: -180px;
+    height: 30px;
+    width: 300px;
+    position: relative;
+    z-index: 1;
+    margin-left: 0px;
+    pointer-events:none !important;
+  }
+}
+
+/* ============================= */
+/* 🧪 DESKTOP BACKGROUND */
+/* ============================= */
+@media screen and (min-width: 801px){
+  body {
+    background: linear-gradient(rgba(18, 13, 26, 0.55), rgba(10, 6, 15, 0.75)), url('https://i.ibb.co/Q3v98rDh/Screenshot-2026-05-17-at-23-03-18.png') center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px !important;
+    color: var(--kolur5) !important;
+  }
+
+  .boxtopper {
+    padding: none;
+    float: right;
+    margin: -680px;
+    height: 30px;
+    width: 340px;
+    position: relative;
+    z-index: 3;
+    margin-right: -30px;
+    pointer-events:none !important;
+  }
+}
+
+/* Logo Replacer */
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
+    content: url('https://i.ibb.co/Y73F6Zrx/lionskulllogo-20260517235916.png');
+    width: 220px !important;
+    height: 120px !important;
+    object-fit: contain !important;
+}
+
+/* Cursor */
+* {
+  cursor: auto !important; 
+}
+
+/* ============================= */
+/* 💜 CHAT MESSAGES */
+/* ============================= */
+#chatMessageList .s-chat-message:nth-child(even) {
+    background: rgba(26, 18, 36, 0.92) !important; 
+    color: #ded9e8 !important; 
+    font-family: 'Outfit', sans-serif;
+}
+
+#chatMessageList .s-chat-message:nth-child(odd) {
+    background: rgba(18, 13, 26, 0.82) !important; 
+    color: #ded9e8 !important;
+    font-family: 'Outfit', sans-serif;
+}
+
+.s-chat-message__pinned {
+    background: linear-gradient(90deg, rgba(15,8,22,0.95), rgba(122,82,170,0.20)) !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 8px rgba(122,82,170,0.20); 
+    font-family: 'Outfit', sans-serif;
+}
+
+.s-chat-message_timestamp {
+    color: #9d94ab !important; 
+    font-family: 'Outfit', sans-serif;
+}
+
+div#chatMessageContainer {
+    border: none !important;
+}
+
+button#label_currentChannel {
+    background: linear-gradient(90deg, #120b1a, #3a2751) !important; 
+    color: #ffffff !important;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* ============================= */
+/* 🧪 TOPBAR */
+/* ============================= */
+.container.topbar {
+    background: linear-gradient(180deg, rgba(20, 14, 28, 0.95), rgba(10, 6, 15, 0.95)) !important;
+    border-radius: 12px !important;
+    box-shadow: inset 0 0 20px rgba(122,82,170,0.08), 0 0 10px rgba(0,0,0,0.50) !important;
+    padding: 10px 15px !important;
+    backdrop-filter: blur(6px);
+    font-family: 'Outfit', sans-serif;
+}
+
+.welcomeback {
+    color: #e3def2 !important;
+    font-size: 15px;
+    text-shadow: 0 0 4px rgba(122,82,170,0.25);
+    font-family: 'Outfit', sans-serif;
+}
+
+.welcomeback a {
+    color: #ac9ec2 !important;
+    font-weight: bold;
+    transition: 0.5s;
+    font-family: 'Outfit', sans-serif;
+}
+
+.welcomeback a:hover {
+    color: #ffffff !important;
+    text-shadow: 0 0 8px rgba(122,82,170,0.40);
+}
+
+/* ============================= */
+/* 💜 LINKS */
+/* ============================= */
+.toplinks {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.toplinks li a {
+    color: #bfaecf !important; 
+    font-size: 10px;
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 8px;
+    transition: 0.4s ease;
+}
+
+.toplinks li a:hover {
+    color: #ffffff !important; 
+    background: rgba(122, 82, 170, 0.15);
+    box-shadow: 0 0 8px rgba(122, 82, 170, 0.20);
+}
+
+.toplinks img.icon {
+    filter: drop-shadow(0 0 4px rgba(122, 82, 170, 0.20)) brightness(1.05);
+    transition: 0.4s ease;
+}
+
+.toplinks li a:hover img.icon {
+    filter: drop-shadow(0 0 8px rgba(122, 82, 170, 0.45)) brightness(1.15);
+}
+
+#silverBeetlesAmt,
+#goldBeetlesAmt {
+    color: #e3def2 !important; 
+    font-family: 'Outfit', sans-serif;
+}
+
+.toplinks li a[href*="logout"] {
+    color: #ded9e8 !important;
+}
+
+.toplinks li a[href*="logout"]:hover {
+    background: rgba(122, 82, 170, 0.15);
+}
+
+/* ============================= */
+/* 🧪 CAVES */
+/* ============================= */
+div.cave-grid > img {
+    height: 150px;
+    width: 200px;
+    opacity: 0.80;
+    border-radius: 10px !important;
+    box-shadow: 0 0 10px rgba(0,0,0,0.40) !important;
+    transition: 1s ease;
+}
+
+div.cave-grid > img:hover {
+    opacity: 1;
+    filter: brightness(1.05) contrast(1.02);
+}
+
+/* prideoverview */
+div.cave-grid > img[src$="prideoverviewbanner.png"] {
+    content: url('https://i.ibb.co/tpqq0WXr/Screenshot-2026-05-17-at-23-10-59.png') !important;
+}
+
+div.cave-grid > img[src$="prideoverviewbanner.png"]:hover {
+    content: url('https://i.ibb.co/tpqq0WXr/Screenshot-2026-05-17-at-23-10-59.png') !important;
+}
+
+/* unsorted lions */
+div.cave-grid > img[src$="unsortedlionsbanner.png"] {
+    content: url('https://i.ibb.co/pjpgxnpP/Screenshot-2026-05-17-at-23-15-09.png') !important;
+}
+
+/* Muties / CRB */
+a[href="cave.php?id=434334"] .cave-grid > img {
+    content: url('https://i.ibb.co/spp86mFP/Screenshot-2026-05-17-at-20-51-48.png') !important;
+    opacity: 0.7;
+    border-radius: 10px !important;
+    box-shadow: 1px 1px 5px var(--darkgray) !important;
+    overflow: hidden;
+    transition: 1s ease;
+
+}
+
+a[href="cave.php?id=434334"] .cave-grid > img:hover {
+    opacity: 1;
+    filter: brightness(1.05) contrast(1.02);
+}
+
+/* Main Cave */
+a[href="cave.php?id=260664"] .cave-grid > img {
+    content: url('https://i.ibb.co/Kc0dY8ct/Screenshot-2026-05-17-at-20-56-57.png') !important;
+    opacity: 0.7;
+    border-radius: 10px !important;
+    box-shadow: 1px 1px 5px var(--darkgray) !important;
+    overflow: hidden;
+    transition: 1s ease;
+}
+
+a[href="cave.php?id=260664"] .cave-grid > img:hover {
+    opacity: 1;
+    filter: brightness(1.05) contrast(1.02);
+}
+
+/* Random Females */
+a[href="cave.php?id=443298"] .cave-grid > img {
+    content: url('https://i.ibb.co/wZ3wpYF2/Screenshot-2026-05-17-at-20-59-52.png') !important;
+    opacity: 0.7;
+    border-radius: 10px !important;
+    box-shadow: 1px 1px 5px var(--darkgray) !important;
+    overflow: hidden;
+    transition: 1s ease;
+}
+
+a[href="cave.php?id=443298"] .cave-grid > img:hover {
+    opacity: 1;
+    filter: brightness(1.05) contrast(1.02);
+}
+
+/* Cave Banner Unused */
+div.cave-grid > img[src$="caveunused.jpg"] {
+    content: url("https://i.ibb.co/WNQGt1wx/Screenshot-2026-05-17-at-23-21-15.png") !important;
+}
+
+/* ============================= */
+/* 💜 CAVE / PANEL STYLE */
+/* ============================= */
+.cave-grid,
+.mound-grid {
+    background: rgba(18, 13, 26, 0.88) !important; 
+    box-shadow: inset 0 0 15px rgba(122, 82, 170, 0.08), 0 0 12px rgba(0,0,0,0.60) !important;
+    border-radius: 12px !important;
+    text-shadow: 1px 1px 1.5px #050307;
+    max-height: 175px;
+    max-width: 250px;
+    overflow: hidden;
+    font-family: 'Quicksand', sans-serif;
+    color: #ffffff !important;
+}
+
+.mound-grid img {
+    background: url('https://i.ibb.co/B709tLs/Screenshot-2026-05-17-at-23-19-33.png') no-repeat center !important;
+    width: 0; height: 0;
+    padding-top: 80px; padding-right: 130px;
+    background-size: contain !important; 
+    border-radius: 10px !important;
+    opacity: 0.80;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.55) !important;
+    transition: 1s ease;
+}
+
+.mound-grid img:hover {
+    opacity: 1;
+    transform: scale(1.02);
+}
+
+/* ============================= */
+/* 🧪 GENERAL TYPOGRAPHY & LINKS */
+/* ============================= */
+a:link,
+a:visited {
+    color: #bfaecf !important; 
+    transition: 0.3s !important;
+    font-family: 'Outfit', sans-serif;
+}
+
+a:hover {
+    color: #ffffff !important; 
+    text-shadow: 0 0 5px rgba(122, 82, 170, 0.40);
+}
+
+h1, h2, h3 {
+    text-shadow: 0 0 8px rgba(122, 82, 170, 0.15);
+    font-family: 'Quicksand', sans-serif;
+    color: #ffffff !important;
+}
+
+div#lion_image {
+    opacity: .90;
+    box-shadow: 0 0 12px rgba(0,0,0,0.50) !important;
+    border-radius: 8px !important;
+    overflow: hidden;
+    margin-top: 19px; margin-left: 6px;
+    transition: .4s ease;
+}
+
+div#lion_image:hover {
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(122, 82, 170, 0.25) !important;
+}
+
+table#player img {
+    opacity: 0.90;
+    box-shadow: 0 0 10px rgba(0,0,0,0.45) !important;
+    border-radius: 8px;
+}
+
+/* ============================= */
+/* 💜 NAVBAR & MAIN BLOCKS */
+/* ============================= */
+.navbar {
+    background: #120b1a; 
+    border-bottom: 0px ridge !important;
+    border-radius: 10px;
+    box-shadow: inset 0 -40px 60px rgba(36, 25, 49, 0.4), 0 0 10px rgba(0,0,0,0.5) !important;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-size: 16px !important;
+    color: #ffffff !important;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    background: #3a2751;
+    color: #ffffff !important;
+    border-radius: 14px;
+    transition: 0.4s !important;
+}
+
+.container.main {
+    background: rgba(18, 13, 26, 0.65) !important;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0 0 60px rgba(122, 82, 170, 0.05), 0 0 12px rgba(0,0,0,0.55) !important;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+    font-family: 'Outfit', sans-serif;
+}
+
+.col-md-9 {
+    background: none;
+    border-right: none;
+    color: #ffffff !important;
+    font-family: 'Outfit', sans-serif;
+}
+
+.breadcrumb {
+    background: #1a1224 !important;
+    border: none !important;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.35) !important;
+    font-family: 'Outfit', sans-serif;
+}
+
+.breadcrumb .active {
+    color: #ffffff;
+    font-size: 16px !important;
+}
+
+/* ============================= */
+/* 🧪 USER STYLING INTERFACES */
+/* ============================= */
+input.floatright, button.button {
+	background: rgba(122, 82, 170, 0.15) !important;
+	border: none;
+	border-radius: 8px !important;
+	color: #ffffff !important;
+	box-shadow: inset 0 0 10px rgba(122, 82, 170, 0.15) !important;
+	font-family: 'Quicksand', sans-serif;
+    padding: 6px 12px;
+}
+
+input.floatright:hover, button.button:hover {
+	background: rgba(122, 82, 170, 0.30) !important;
+	transition: .4s !important;
+}
+
+#commentBox, div.comment {
+	background: rgba(26, 18, 36, 0.75) !important;
+	box-shadow: 0 0 6px rgba(0,0,0,0.40) !important;
+	border: none !important;
+	font-family: 'Outfit', sans-serif;
+}
+
+.panel {
+	background: #1d1429 !important;
+	border: none !important;
+	border-radius: 10px;
+	color:#f5f5f5 !important;
+	box-shadow: 1px 1px 5px #000 !important;
+	font-family: 'Outfit', sans-serif;
+}
+
+/* GAME STAT BARS */
+.progress {
+	background: #0d0a12;
+	box-shadow: inset 1px 1px 3px #000 !important;
+	border-radius: 20px;
+}
+.progress-bar-warning { background: linear-gradient(#967bb6, #4d3866)!important; }
+.progress-bar-danger { background: linear-gradient(#5a3d7c, #1f142e)!important; }
+.progress-bar-success { background: linear-gradient(#7b5da1, #36224d)!important; }
+.progress-bar { background: linear-gradient(#8a6cb0, #2c1a3f); border-radius: 20px; }
+
+/* Headers formatting */
+h1 { color: #ffffff; font-size: 54px; font-family: 'Quicksand', sans-serif; text-align: center; }
+h2 { color: #ded9e8; font-size: 38px; text-align: center; font-family: 'Quicksand', sans-serif; }
+h3 { color: #f5f5f5 !important; font-size: 20px !important; font-family: 'Quicksand', sans-serif; }
+
+/* TABLES SETUP */
+.table {
+	background: #120b1a; 
+	border: none;
+	border-radius: 10px !important;
+	box-shadow: 0 0 10px rgba(0,0,0,0.50);
+	font-family: 'Outfit', sans-serif;
+}
+
+.top, .bottom, th {
+	background: #2a1b3d !important;
+	color: #ffffff !important;
+	font-size: 15px !important;
+	border-radius: 8px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.table .left, .inner-table .left {
+	background: #191026 !important;
+}
+
+input, select, textarea {
+	background: #1a1224 !important;
+	border: none !important;
+	border-radius: 8px;
+	color: #ffffff !important;
+	font-family: 'Outfit', sans-serif;
+}
+
+/* 🌹 CREDITS (DO NOT REMOVE) */ 
+.breadcrumb::after { 
+	content: "CSS by Sak#327675"; 
+	color: #9d94ab; 
+	font-size: 11px !important; 
+	position: absolute; 
+	right: 20%; 
+	margin: 5px;
+	z-index: 100;
+	font-family: 'Outfit', sans-serif;
+}
+
+/* ============================= */
+/* 💜 DYNASTY LIST */
+/* ============================= */
+.dynastylist .left {
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+
+	background-size: cover !important;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+
+	transition: 0.8s ease;
+
+	box-shadow: 1px 1px 5px #050307; /* Dark theme-matching shadow */
+
+	width: 200px;
+	height: 200px;
+	display: block;
+}
+
+/* ensure anchor doesn't collapse layout */
+.dynastylist a {
+	display: block;
+}
+
+/* shared behavior fix */
+.dynastylist .left {
+	display: block;
+}
+
+/* 💅 DYNASTY IMAGES */
+div.left img {
+    content: url('https://i.ibb.co/v47Bbq2x/Screenshot-2026-05-10-at-02-56-07.png') !important;
+    object-fit: cover;
+    object-position: top;
+    padding: 0;
+    height: 140px;
+    max-width: 140px !important;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+/* 🧪 hover glow effect */
+.row.dynastycollection .dynastylist .left:hover {
+	transform: scale(1.03);
+
+	box-shadow:
+		0 0 14px rgba(122, 82, 170, 0.25), /* Subtle purple glows */
+		0 0 26px rgba(157, 148, 171, 0.18),
+		0 0 34px rgba(58, 39, 81, 0.20),
+		1px 1px 5px #050307;
+
+	filter: brightness(1.08) saturate(1.2);
+}
+
+/* 💜 BACKGROUND TABLE */
+.table {
+	background: #120b1a; /* Deep midnight violet base */
+
+	border: 0px ridge;
+
+	text-shadow: 1px 1px 1.5px #000;
+
+	border-radius: 10px !important;
+
+	border-collapse: separate;
+
+	box-shadow: 0 0 16px rgba(122, 82, 170, 0.15); /* Subtle toxic purple box-glow */
+
+	font-family: 'Quicksand', cursive;
+}
+
+/* ============================= */
+/* 📦 SINGLE LARGE ABOUT ME BOX CONTAINER */
+/* ============================= */
+.boxcontainer {
+    width: 100% !important;
+    max-width: 1000px;
+    margin: 0 auto 20px auto;
+    display: block !important;
+    clear: both !important;
+}
+
+.box {
+    width: 100%;
+    height: 320px;
+    background: linear-gradient(180deg, rgba(36, 25, 49, 0.92), rgba(18, 13, 26, 0.96)) !important;
+    color: #ffffff;
+    padding: 20px;
+    border: 1px solid rgba(122, 82, 170, 0.25);
+    border-radius: 14px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.70);
+    box-sizing: border-box;
+    overflow: auto;
+    font-family: 'Outfit', sans-serif;
+    position: relative; /* Anchor for corners */
+}
+
+/* 🛡️ CORNER PNG POSITIONING ALIGNMENTS */
+.box::before {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 110px;      
+    height: 110px;
+    background: url('https://i.pngimg.me/thumb/f/720/m2i8G4d3G4H7G4b1.jpg') no-repeat center; 
+    background-size: contain;
+    opacity: 0.85;
+    pointer-events: none;
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+
+    box-shadow: 0 0 12px rgba(120, 255, 150, 0.22);
+}
+
