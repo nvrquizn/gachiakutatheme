@@ -496,13 +496,14 @@ h3 { color: #f5f5f5 !important; font-size: 20px !important; font-family: 'Quicks
 
 /* TABLES SETUP */
 .table {
-	background: #120b1a; 
-	border: 0px ridge;
-	text-shadow: 1px 1px 1.5px #000;
+	background: #120b1a !important; 
+	border: 0px ridge !important;
+	text-shadow: 1px 1px 1.5px #000 !important;
 	border-radius: 10px !important;
-	border-collapse: separate;
-	box-shadow: 0 0 16px rgba(122, 82, 170, 0.15); /* Toxic purple box glow */
-	font-family: 'Quicksand', cursive;
+	border-collapse: separate !important;
+	box-shadow: 0 0 16px rgba(122, 82, 170, 0.15) !important; /* Toxic purple box glow */
+	font-family: 'Quicksand', cursive !important;
+	color: #ffffff !important;
 }
 
 .top, .bottom, th {
