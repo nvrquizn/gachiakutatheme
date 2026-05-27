@@ -46,7 +46,7 @@
 /* ============================= */
 @media screen and (max-width: 800px){
   body {
-    background: url('https://i.ibb.co/Q3v98rDh/Screenshot-2026-05-17-at-23-03-18.png') no-repeat center center fixed;
+    background: url('https://i.ibb.co/60PM0RXV/Screenshot-2026-05-26-at-17-21-27.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -63,7 +63,7 @@
     left:0;
     right:0;
     z-index:-1;
-    background: linear-gradient(rgba(13, 10, 18, 0.65), rgba(5, 3, 8, 0.80)), url('https://i.ibb.co/Q3v98rDh/Screenshot-2026-05-17-at-23-03-18.png') center center;
+    background: linear-gradient(rgba(13, 10, 18, 0.65), rgba(5, 3, 8, 0.80)), url('https://i.ibb.co/60PM0RXV/Screenshot-2026-05-26-at-17-21-27.png') center center;
     background-size: cover;
     font-family: 'Outfit', sans-serif;
     color: var(--kolur5) !important;
@@ -87,7 +87,7 @@
 /* ============================= */
 @media screen and (min-width: 801px){
   body {
-    background: linear-gradient(rgba(18, 13, 26, 0.55), rgba(10, 6, 15, 0.75)), url('https://i.ibb.co/Q3v98rDh/Screenshot-2026-05-17-at-23-03-18.png') center center fixed;
+    background: linear-gradient(rgba(18, 13, 26, 0.55), rgba(10, 6, 15, 0.75)), url('https://i.ibb.co/60PM0RXV/Screenshot-2026-05-26-at-17-21-27.png') center center fixed;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Outfit', sans-serif;
@@ -118,7 +118,7 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
 
 /* Cursor Reset */
 * {
-  cursor: auto !important; 
+  cursor: url('https://cdn.cursors-4u.net/previews/masamune-0877b410-32.webp') 32 32, auto !important;
 }
 
 /* ============================= */
@@ -254,68 +254,37 @@ div.cave-grid > img:hover {
     filter: brightness(1.05) contrast(1.02);
 }
 
-/* prideoverview */
+/* unsorted lions */
+div.cave-grid > img[src$="unsortedlionsbanner.png"] {
+    content: url('https://i.ibb.co/zHbrpkDG/Screenshot-2026-05-26-at-17-28-51.png') !important;
+}
+
+div.cave-grid > img[src$="unsortedlionsbanner.png"]:hover {
+    content: url('https://i.ibb.co/zHbrpkDG/Screenshot-2026-05-26-at-17-28-51.png') !important;
+}
+
+/* nesting */
+div.cave-grid > img[src$="nestingbanner.png"] {
+    content: url('https://i.ibb.co/chM4DmVy/Screenshot-2026-05-26-at-17-30-00.png') !important;
+}
+
+div.cave-grid > img[src$="nestingbanner.png"]:hover {
+    content: url('https://i.ibb.co/chM4DmVy/Screenshot-2026-05-26-at-17-30-00.png') !important;
+}
+
+/* pride overview */
 div.cave-grid > img[src$="prideoverviewbanner.png"] {
-    content: url('https://i.ibb.co/tpqq0WXr/Screenshot-2026-05-17-at-23-10-59.png') !important;
+    content: url('https://i.ibb.co/1YS7KNkP/Screenshot-2026-05-26-at-17-33-28.png') !important;
 }
 
 div.cave-grid > img[src$="prideoverviewbanner.png"]:hover {
-    content: url('https://i.ibb.co/tpqq0WXr/Screenshot-2026-05-17-at-23-10-59.png') !important;
-}
-
-/* unsorted lions */
-div.cave-grid > img[src$="unsortedlionsbanner.png"] {
-    content: url('https://i.ibb.co/pjpgxnpP/Screenshot-2026-05-17-at-23-15-09.png') !important;
-}
-
-/* Muties / CRB */
-a[href="cave.php?id=434334"] .cave-grid > img {
-    content: url('https://i.ibb.co/spp86mFP/Screenshot-2026-05-17-at-20-51-48.png') !important;
-    opacity: 0.7;
-    border-radius: 10px !important;
-    box-shadow: 1px 1px 5px var(--darkgray) !important;
-    overflow: hidden;
-    transition: 1s ease;
-}
-
-a[href="cave.php?id=434334"] .cave-grid > img:hover {
-    opacity: 1;
-    filter: brightness(1.05) contrast(1.02);
-}
-
-/* Main Cave */
-a[href="cave.php?id=260664"] .cave-grid > img {
-    content: url('https://i.ibb.co/Kc0dY8ct/Screenshot-2026-05-17-at-20-56-57.png') !important;
-    opacity: 0.7;
-    border-radius: 10px !important;
-    box-shadow: 1px 1px 5px var(--darkgray) !important;
-    overflow: hidden;
-    transition: 1s ease;
-}
-
-a[href="cave.php?id=260664"] .cave-grid > img:hover {
-    opacity: 1;
-    filter: brightness(1.05) contrast(1.02);
-}
-
-/* Random Females */
-a[href="cave.php?id=443298"] .cave-grid > img {
-    content: url('https://i.ibb.co/wZ3wpYF2/Screenshot-2026-05-17-at-20-59-52.png') !important;
-    opacity: 0.7;
-    border-radius: 10px !important;
-    box-shadow: 1px 1px 5px var(--darkgray) !important;
-    overflow: hidden;
-    transition: 1s ease;
-}
-
-a[href="cave.php?id=443298"] .cave-grid > img:hover {
-    opacity: 1;
-    filter: brightness(1.05) contrast(1.02);
+    content: url('https://i.ibb.co/1YS7KNkP/Screenshot-2026-05-26-at-17-33-28.png') !important;
 }
 
 /* Cave Banner Unused */
+div.cave-grid > img [src$="cavedefault.jpg"],
 div.cave-grid > img[src$="caveunused.jpg"] {
-    content: url("https://i.ibb.co/WNQGt1wx/Screenshot-2026-05-17-at-23-21-15.png") !important;
+    content: url("https://i.ibb.co/21XmvP95/Screenshot-2026-05-26-at-17-34-33.png") !important;
 }
 
 /* ============================= */
@@ -335,7 +304,7 @@ div.cave-grid > img[src$="caveunused.jpg"] {
 }
 
 .mound-grid img {
-    background: url('https://i.ibb.co/B709tLs/Screenshot-2026-05-17-at-23-19-33.png') no-repeat center !important;
+    background: url('https://i.ibb.co/dHZF3tm/Screenshot-2026-05-26-at-17-35-16.png') no-repeat center !important;
     width: 0; height: 0;
     padding-top: 80px; padding-right: 130px;
     background-size: contain !important; 
@@ -729,7 +698,7 @@ input, select, textarea {
 
 /* 💅 DYNASTY IMAGES & PROFILE ASSETS MAPPING */
 div.left img {
-    content: url('https://i.ibb.co/v47Bbq2x/Screenshot-2026-05-10-at-02-56-07.png') !important;
+    content: url('https://i.ibb.co/3YVWxdLX/Screenshot-2026-05-26-at-17-36-20.png') !important;
     object-fit: cover;
     object-position: top;
     padding: 0;
@@ -784,7 +753,7 @@ div.left img {
     right: 5px;
     width: 110px;      
     height: 110px;
-    background: url('https://i.pngimg.me/thumb/f/720/m2i8G4d3G4H7G4b1.jpg') no-repeat center; 
+    background: url('https://i.ibb.co/KzyHSCtQ/Screenshot-2026-05-26-at-17-37-57.png') no-repeat center; 
     background-size: contain;
     opacity: 0.85;
     pointer-events: none;
