@@ -116,7 +116,7 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
     object-fit: contain !important;
 }
 
-/* Cursor */
+/* Cursor Reset */
 * {
   cursor: auto !important; 
 }
@@ -371,6 +371,11 @@ h1, h2, h3 {
     color: #ffffff !important;
 }
 
+h3:hover {
+	color: #bfaecf !important;
+	transition: .7s !important;
+}
+
 div#lion_image {
     opacity: .90;
     box-shadow: 0 0 12px rgba(0,0,0,0.50) !important;
@@ -445,7 +450,7 @@ table#player img {
 }
 
 /* ============================= */
-/* 🧪 USER STYLING INTERFACES */
+/* 🧪 USER STYLING INTERFACES & COMMENTS */
 /* ============================= */
 input.floatright, button.button {
 	background: rgba(122, 82, 170, 0.15) !important;
@@ -469,6 +474,88 @@ input.floatright:hover, button.button:hover {
 	font-family: 'Outfit', sans-serif;
 }
 
+input#comment {
+	background: rgba(122, 82, 170, 0.12) !important;
+	color: #ffffff !important;
+	border-radius: 10px !important;
+	font-family: 'Outfit', sans-serif;
+}
+
+small.text-muted {
+	color: #bfaecf;
+	font-family: 'Outfit', sans-serif;
+}
+
+small.text-muted a {
+	color: #e3def2;
+	font-family: 'Outfit', sans-serif;
+}
+
+input[type="button"].bad {
+	background: #3a2751 !important;
+	border-radius: 10px !important;
+	color: #ffffff !important;
+	font-family: 'Outfit', sans-serif;
+}
+
+::placeholder {
+	color: #bfaecf !important;
+	font-family: 'Outfit', sans-serif;
+}
+
+/* ============================= */
+/* 🧪 GAME ALERTS STYLING */
+/* ============================= */
+.alert {
+	background: #3a2751;
+	border: 0px ridge;
+	text-align: center;
+	text-shadow: 1px 1px 2px #000;
+	border-radius: 10px !important;
+	float: none;
+	color: #e3def2 !important;
+	box-shadow: rgba(122, 82, 170, 0.15) 0px -50px 36px -28px inset, 1px 1px 5px #000 !important;
+	font-family: 'Outfit', sans-serif;
+}
+
+.alert-warning {
+	background: #462f61;
+	border: 0px ridge;
+	text-align: center;
+	text-shadow: 1px 1px 2px #000;
+	border-radius: 10px !important;
+	float: none;
+	color: #ffffff !important;
+	box-shadow: rgba(122, 82, 170, 0.20) 0px -50px 36px -28px inset, 1px 1px 5px #000 !important;
+	font-family: 'Outfit', sans-serif;
+}
+
+.alert-danger {
+	background: #241931 !important;
+	text-align: center;
+	border: 0px ridge;
+	text-shadow: 1px 1px 2px #000;
+	border-radius: 10px !important;
+	float: none;
+	color: #e3def2 !important;
+	box-shadow: rgba(122, 82, 170, 0.10) 0px -50px 36px -28px inset, 1px 1px 5px #000 !important;
+	font-family: 'Outfit', sans-serif;
+}
+
+/* ============================= */
+/* 🧪 FEATURE BLOCKS & PANELS */
+/* ============================= */
+.feature,
+div.left {
+	background: #3a2751 !important;
+	box-shadow: rgba(122, 82, 170, 0.12) 0px -80px 36px -28px inset, 1px 1px 5px #000 !important;
+	text-shadow: 1px 1px 2px #000;
+	border-radius: 10px !important;
+	border: none!important;
+	color: #e3def2 !important;
+	font-family: 'Outfit', sans-serif;
+}
+
 .panel {
 	background: #1d1429 !important;
 	border: none !important;
@@ -478,7 +565,14 @@ input.floatright:hover, button.button:hover {
 	font-family: 'Outfit', sans-serif;
 }
 
-/* GAME STAT BARS */
+/* 💜 GAME STAT BARS */
+.progress div {
+	color: #ffffff !important;
+	font-size: 13px !important;
+	text-shadow: 1px 1px 1px #000 !important;
+	font-family: 'Outfit', sans-serif;
+}
+
 .progress {
 	background: #0d0a12;
 	box-shadow: inset 1px 1px 3px #000 !important;
@@ -494,20 +588,24 @@ h1 { color: #ffffff; font-size: 54px; font-family: 'Quicksand', sans-serif; text
 h2 { color: #ded9e8; font-size: 38px; text-align: center; font-family: 'Quicksand', sans-serif; }
 h3 { color: #f5f5f5 !important; font-size: 20px !important; font-family: 'Quicksand', sans-serif; }
 
-/* TABLES SETUP */
+/* ============================= */
+/* 🧪 TABLES ADVANCED SETUP */
+/* ============================= */
 .table {
-	background: #120b1a !important; 
-	border: 0px ridge !important;
-	text-shadow: 1px 1px 1.5px #000 !important;
+	background: #120b1a; /* Deep midnight void backdrop */
+	border: 0px ridge;
+	text-shadow: 1px 1px 1.5px #000;
 	border-radius: 10px !important;
-	border-collapse: separate !important;
-	box-shadow: 0 0 16px rgba(122, 82, 170, 0.15) !important; /* Toxic purple box glow */
-	font-family: 'Quicksand', cursive !important;
-	color: #ffffff !important;
+	border-collapse: separate;
+	box-shadow: 
+		0 0 16px rgba(122, 82, 170, 0.16),  
+		0 0 8px rgba(157, 148, 171, 0.12);    
+	font-family: 'Quicksand', sans-serif;
 }
 
 .top, .bottom, th {
 	background: #2a1b3d !important;
+	box-shadow: 0 0 12px rgba(122, 82, 170, 0.12) inset, 1px 1px 5px #000 !important;
 	color: #ffffff !important;
 	font-size: 15px !important;
 	border-radius: 8px;
@@ -516,6 +614,50 @@ h3 { color: #f5f5f5 !important; font-size: 20px !important; font-family: 'Quicks
 
 .table .left, .inner-table .left {
 	background: #191026 !important;
+	box-shadow: 0 0 10px rgba(122, 82, 170, 0.08) inset !important;
+	border-radius: 10px;
+}
+
+.inner-table .right {
+	background: #120b1a !important;
+	box-shadow: 0 0 12px rgba(122, 82, 170, 0.12) inset, 1px 1px 5px #000 !important;
+	color: #ffffff !important;
+	border-radius: 10px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.right_odd {
+	background: #0d0a12 !important;
+	box-shadow: 0 0 10px rgba(122, 82, 170, 0.10) inset !important;
+}
+
+.item-header {
+	background: #2a1b3d !important;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(122, 82, 170, 0.12) inset !important;
+	color: #ffffff !important;
+	font-size: 15px !important;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.item {
+	background: #191026 !important;
+	box-shadow: 0 0 12px rgba(122, 82, 170, 0.10) inset, 1px 1px 5px #000 !important;
+	border-radius: 10px;
+	border: 0px ridge !important;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.item-footer {
+	background: #120b1a;
+}
+
+div.slider.round {
+	background: #3a2751 !important;
+}
+
+div.slider.round::before {
+	background: #ffffff !important;
 }
 
 input, select, textarea {
@@ -523,6 +665,32 @@ input, select, textarea {
 	border: none !important;
 	border-radius: 8px;
 	color: #ffffff !important;
+	font-family: 'Outfit', sans-serif;
+}
+
+/* Table Link Custom Effects */
+.table a:link {
+	color: #bfaecf !important;
+	transition: 0.5s!important;
+	font-family: 'Outfit', sans-serif;
+}
+
+.table a:visited {
+	color: #9d94ab !important;
+	transition: 0.5s!important;
+	font-family: 'Outfit', sans-serif;
+}
+
+.table a:active {
+	color: #ffffff !important;
+	transition: 0.5s!important;
+} 
+
+.table a:hover {
+	color: #ffffff !important;
+	transform: scale(1.05);
+	transition: 0.7s!important;
+	text-shadow: 0 0 8px #7a52aa, 0 0 12px #e3def2;
 	font-family: 'Outfit', sans-serif;
 }
 
@@ -555,12 +723,11 @@ input, select, textarea {
 	display: block;
 }
 
-/* ensure anchor doesn't collapse layout */
 .dynastylist a {
 	display: block;
 }
 
-/* 💅 DYNASTY IMAGES */
+/* 💅 DYNASTY IMAGES & PROFILE ASSETS MAPPING */
 div.left img {
     content: url('https://i.ibb.co/v47Bbq2x/Screenshot-2026-05-10-at-02-56-07.png') !important;
     object-fit: cover;
@@ -572,13 +739,13 @@ div.left img {
     border-bottom-right-radius: inherit;
 }
 
-/* 🧪 hover glow effect */
+/* Toxic purple/midnight glow shift */
 .row.dynastycollection .dynastylist .left:hover {
 	transform: scale(1.03);
 	box-shadow:
-		0 0 14px rgba(122, 82, 170, 0.25), 
-		0 0 26px rgba(157, 148, 171, 0.18),
-		0 0 34px rgba(58, 39, 81, 0.20),
+		0 0 14px rgba(122, 82, 170, 0.28),   
+		0 0 26px rgba(58, 39, 81, 0.22),   
+		0 0 34px rgba(18, 13, 26, 0.40),
 		1px 1px 5px #050307;
 	filter: brightness(1.08) saturate(1.2);
 }
