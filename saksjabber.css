@@ -70,7 +70,7 @@
   }
 	
   .boxtopper {
-    padding: none;
+    padding: 0;
     float: left;
     margin: -180px;
     height: 30px;
@@ -96,7 +96,7 @@
   }
 
   .boxtopper {
-    padding: none;
+    padding: 0;
     float: right;
     margin: -680px;
     height: 30px;
@@ -276,7 +276,6 @@ a[href="cave.php?id=434334"] .cave-grid > img {
     box-shadow: 1px 1px 5px var(--darkgray) !important;
     overflow: hidden;
     transition: 1s ease;
-
 }
 
 a[href="cave.php?id=434334"] .cave-grid > img:hover {
@@ -498,10 +497,12 @@ h3 { color: #f5f5f5 !important; font-size: 20px !important; font-family: 'Quicks
 /* TABLES SETUP */
 .table {
 	background: #120b1a; 
-	border: none;
+	border: 0px ridge;
+	text-shadow: 1px 1px 1.5px #000;
 	border-radius: 10px !important;
-	box-shadow: 0 0 10px rgba(0,0,0,0.50);
-	font-family: 'Outfit', sans-serif;
+	border-collapse: separate;
+	box-shadow: 0 0 16px rgba(122, 82, 170, 0.15); /* Toxic purple box glow */
+	font-family: 'Quicksand', cursive;
 }
 
 .top, .bottom, th {
@@ -543,15 +544,11 @@ input, select, textarea {
 	position: relative;
 	overflow: hidden;
 	border-radius: 10px;
-
 	background-size: cover !important;
 	background-position: center !important;
 	background-repeat: no-repeat !important;
-
 	transition: 0.8s ease;
-
-	box-shadow: 1px 1px 5px #050307; /* Dark theme-matching shadow */
-
+	box-shadow: 1px 1px 5px #050307; 
 	width: 200px;
 	height: 200px;
 	display: block;
@@ -559,11 +556,6 @@ input, select, textarea {
 
 /* ensure anchor doesn't collapse layout */
 .dynastylist a {
-	display: block;
-}
-
-/* shared behavior fix */
-.dynastylist .left {
 	display: block;
 }
 
@@ -582,31 +574,12 @@ div.left img {
 /* 🧪 hover glow effect */
 .row.dynastycollection .dynastylist .left:hover {
 	transform: scale(1.03);
-
 	box-shadow:
-		0 0 14px rgba(122, 82, 170, 0.25), /* Subtle purple glows */
+		0 0 14px rgba(122, 82, 170, 0.25), 
 		0 0 26px rgba(157, 148, 171, 0.18),
 		0 0 34px rgba(58, 39, 81, 0.20),
 		1px 1px 5px #050307;
-
 	filter: brightness(1.08) saturate(1.2);
-}
-
-/* 💜 BACKGROUND TABLE */
-.table {
-	background: #120b1a; /* Deep midnight violet base */
-
-	border: 0px ridge;
-
-	text-shadow: 1px 1px 1.5px #000;
-
-	border-radius: 10px !important;
-
-	border-collapse: separate;
-
-	box-shadow: 0 0 16px rgba(122, 82, 170, 0.15); /* Subtle toxic purple box-glow */
-
-	font-family: 'Quicksand', cursive;
 }
 
 /* ============================= */
@@ -632,7 +605,7 @@ div.left img {
     box-sizing: border-box;
     overflow: auto;
     font-family: 'Outfit', sans-serif;
-    position: relative; /* Anchor for corners */
+    position: relative; 
 }
 
 /* 🛡️ CORNER PNG POSITIONING ALIGNMENTS */
@@ -653,7 +626,5 @@ div.left img {
     max-width: 100%;
     height: auto;
     border-radius: 6px;
-
     box-shadow: 0 0 12px rgba(120, 255, 150, 0.22);
 }
-
